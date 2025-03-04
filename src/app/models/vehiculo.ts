@@ -8,5 +8,5 @@ export interface Vehiculo {
         chasis: string;
         motor: string;
         color: string;
-      }
+}
 

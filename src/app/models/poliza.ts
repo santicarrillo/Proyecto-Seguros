@@ -1,3 +1,5 @@
+import { Beneficiario } from "./beneficiario";
+
 export interface Poliza {
         id: number;
         clienteId: number;
