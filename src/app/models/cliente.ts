@@ -1,4 +1,4 @@
-export interface Cliente {
+export interface Cliente {//se crea la interfaz Cliente
     id: number;
     nombre: string;
     apellido: string;

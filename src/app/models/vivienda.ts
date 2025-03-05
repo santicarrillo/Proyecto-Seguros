@@ -1,4 +1,4 @@
-export interface Vivienda {
+export interface Vivienda {//se crea la interfaz Vivienda
         id: number;
         polizaId: number;
         direccion: string;

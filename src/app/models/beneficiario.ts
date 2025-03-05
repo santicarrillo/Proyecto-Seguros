@@ -1,4 +1,4 @@
-export interface Beneficiario {
+export interface Beneficiario {//se crea la interfaz Beneficiario 
     id: number;
     polizaId: number;
     nombre: string;

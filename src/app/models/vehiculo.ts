@@ -1,4 +1,4 @@
-export interface Vehiculo {
+export interface Vehiculo {//se crea la interfaz Vehiculo
         id: number;
         polizaId: number;
         marca: string;

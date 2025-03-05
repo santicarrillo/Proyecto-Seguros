@@ -1,5 +1,4 @@
-export interface Empresa {
+export interface Empresa {//se crea la interfaz Empresa
         id: number;
         nombre: string;
-        aseguradorId: number; // Relación con el asegurador
       }
