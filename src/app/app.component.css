@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
   }
-  .navbar{
-    background-color: aqua;
+  .body {
+    background-color: #002366;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #000;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
   }

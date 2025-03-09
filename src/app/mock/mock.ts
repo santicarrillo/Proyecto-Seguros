@@ -4,6 +4,7 @@ import { Beneficiario } from '../models/beneficiario';
 import { Poliza } from '../models/poliza';
 import { Asegurador } from '../models/asegurador';
 import { Empresa } from '../models/empresa';
+import { Cliente } from '../models/cliente';
 export const empresaSeguros : Empresa[]=[
     {
       id: 1,
@@ -16,41 +17,43 @@ export const empresaSeguros : Empresa[]=[
     
   ];
   
-  export const aseguradores:Asegurador[] = [
+  export const asegurador:Asegurador[] = [
     {
       id: 1,
       nombre: "Carlos",
       apellido: "Gómez",
-      cod_productor: "A12345",
+      cod_productor: 512858,
       empresas: [ empresaSeguros[0], empresaSeguros[1]] // Puede trabajar con varias empresas
     },
     {
       id: 2,
       nombre: "Laura",
       apellido: "Fernández",
-      cod_productor: "B67890",
+      cod_productor: 512859,
       empresas: [ empresaSeguros[2]] // Solo trabaja con Sura
     }
   ];
   
-  export const clientes = [
+  export const cliente :Cliente[]=[
     {
       id: 1,
-      nombre: "Juan Pérez",
+      nombre: "Juan",
+      apellido: "Pérez",
       dni: "30123456",
       telefono: "111-222-333",
       email: "juanperez@email.com",
-      aseguradorId: 1, // Cliente atendido por Carlos Gómez
-      empresaId: 1 // Asegurado en San Cristóbal
+      empresaId: 1, // Asegurado en San Cristóbal
+      polizaId: 1 // Tiene una póliza de seguro
     },
     {
       id: 2,
-      nombre: "María López",
+      nombre: "María",
+      apellido: "López",
       dni: "29111222",
       telefono: "444-555-666",
       email: "marialopez@email.com",
-      aseguradorId: 2, // Cliente atendido por Laura Fernández
-      empresaId: 2 // Asegurado en Sura
+      empresaId: 2, // Asegurado en Sura
+      polizaId: 2 // Tiene una póliza
     }
   ];
   
